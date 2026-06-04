@@ -821,26 +821,23 @@ input { font-family: inherit; }
 }
 .amount-robux-icon { width: 28px; height: 28px; object-fit: contain; }
 .edit-amount-btn {
-  background: none;
+  background: transparent;
   font-size: 16px;
   color: var(--text3);
-  padding: 2px;
-  transition: color 0.2s;
-}
-.edit-amount-btn:hover { color: var(--text); }
-.custom-amount-input {
-  width: 100%;
-  background: var(--bg3);
-  border: 1px solid var(--border);
+  padding: 6px 10px;
   border-radius: 8px;
-  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.edit-amount-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text);
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  outline: none;
-  margin-bottom: 14px;
-  transition: border-color 0.2s;
+}
+
+.edit-amount-btn:active {
+  background: rgba(255, 255, 255, 0.12);
 }
 .custom-amount-input:focus { border-color: var(--accent); }
 .quick-amounts {
