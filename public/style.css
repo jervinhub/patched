@@ -821,23 +821,21 @@ input { font-family: inherit; }
 }
 .amount-robux-icon { width: 28px; height: 28px; object-fit: contain; }
 .edit-amount-btn {
-  background: transparent;
-  font-size: 16px;
-  color: var(--text3);
-  padding: 6px 10px;
+  background: #3a3a3a; /* permanent gray background */
+  color: var(--text);
+  padding: 6px 12px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .edit-amount-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
+  background: #505050; /* lighter gray on hover */
 }
 
 .edit-amount-btn:active {
-  background: rgba(255, 255, 255, 0.12);
+  background: #606060;
 }
 .custom-amount-input:focus { border-color: var(--accent); }
 .quick-amounts {
