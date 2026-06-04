@@ -855,14 +855,19 @@ input { font-family: inherit; }
 .btn-back {
   display: block;
   margin: 0 auto;
-  background: none;
-  color: var(--text3);
+  background: #393b44;
+  color: #ffffff;
   font-size: 13px;
   padding: 4px 10px;
   border-radius: 4px;
-  transition: color 0.2s;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.btn-back:hover { color: var(--text); }
+
+.btn-back:hover {
+  background: #4a4d57;
+}
 
 /* Step 3 Loading */
 .sending-loader {
