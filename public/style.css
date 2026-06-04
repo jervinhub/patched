@@ -820,30 +820,29 @@ input { font-family: inherit; }
   margin-bottom: 14px;
 }
 .amount-robux-icon { width: 28px; height: 28px; object-fit: contain; }
-.edit-amount-btn {
-  background: #3a3a3a; /* permanent gray background */
-  color: var(--text);
-  padding: 6px 12px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
+.edit-amount-btn { 
+  background: transparent; 
+  font-size: 16px; 
+  color: var(--text3); 
+  padding: 6px 10px; 
+  border-radius: 8px; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.2s ease, color 0.2s ease;
+ }
 
 .edit-amount-btn:hover {
-  background: #505050; /* lighter gray on hover */
+   background: rgba(70, 69, 69, 0.311); 
+   color: var(--text);
+   }
+.edit-amount-btn:active { 
+background: rgba(255, 255, 255, 0.12);
+ }
+ .custom-amount-input:focus { 
+  border-color: var(--accent); 
 }
-
-.edit-amount-btn:active {
-  background: #606060;
-}
-.custom-amount-input:focus { border-color: var(--accent); }
-.quick-amounts {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 18px;
-}
+ .quick-amounts {
+   display: flex; gap: 8px; justify-content: center; margin-bottom: 18px; }
 .quick-btn {
   display: flex;
   align-items: center;
